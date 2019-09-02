@@ -6,13 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="myStarter" />
+        <module name="redisstarter" />
+        <module name="dao-starter" />
+        <module name="rabbitmqstarter" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dao-starter" options="-parameters" />
       <module name="myStarter" options="-parameters" />
+      <module name="rabbitmqstarter" options="-parameters" />
+      <module name="redisstarter" options="-parameters" />
     </option>
   </component>
 </project>

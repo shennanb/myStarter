@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <description>mongodb myBatis-plus相关依赖</description>
     <artifactId>dao-starter</artifactId>
     <dependencies>
         <!-- mysql 相关 start-->
@@ -19,6 +19,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.9</version>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
@@ -48,6 +49,14 @@
             <version>${mybatis-plus-boot-starter.version}</version>
         </dependency>
         <!-- mysql 相关 end-->
+
+        <!-- mongodb start -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <!-- mongodb end -->
+
 
 
     </dependencies>

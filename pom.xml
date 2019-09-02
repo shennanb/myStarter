@@ -10,6 +10,8 @@
     <version>${project.all.version}</version>
     <modules>
         <module>dao-starter</module>
+        <module>rabbitmq-starter</module>
+        <module>redis-starter</module>
     </modules>
     <parent>
         <groupId>com.spring.cloud</groupId>
