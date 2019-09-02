@@ -8,6 +8,7 @@
     <artifactId>myStarter</artifactId>
     <packaging>pom</packaging>
     <version>${project.all.version}</version>
+    <description>整合常用starter</description>
     <modules>
         <module>dao-starter</module>
         <module>rabbitmq-starter</module>
