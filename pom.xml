@@ -7,7 +7,7 @@
     <groupId>com.spring.cloud</groupId>
     <artifactId>myStarter</artifactId>
     <packaging>pom</packaging>
-    <version>${project.all.version}</version>
+    <version>1.0-SNAPSHOT</version>
     <description>整合常用starter</description>
     <modules>
         <module>dao-starter</module>
