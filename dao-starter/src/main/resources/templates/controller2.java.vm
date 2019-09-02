@@ -1,0 +1,15 @@
+package ${package.Controller};
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+/**
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+
+@FeignClient(path = "", value = "")
+public interface ${table.controllerName} {
+
+}
+

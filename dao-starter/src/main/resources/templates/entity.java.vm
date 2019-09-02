@@ -1,0 +1,55 @@
+package ${package.Entity};
+
+import com.baomidou.mybatisplus.annotation.*;
+#foreach($pkg in ${table.importPackages})
+#if("${pkg}" != "com.baomidou.mybatisplus.extension.activerecord.Model"
+ && "${pkg}" != "com.baomidou.mybatisplus.annotation.TableName")
+import ${pkg};
+#end
+#end
+#if(${entityLombokModel})
+import lombok.Data;
+#end
+
+/**
+ * <p>
+ * $!{table.comment}
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+
+@Data
+#if(${table.convert})
+@TableName("${table.name}")
+#end
+public class ${entity} implements Serializable {
+
+    private static final long serialVersionUID=1L;
+## ----------  BEGIN 字段循环遍历  ----------
+#foreach($field in ${table.fields})
+
+#if(${field.keyFlag})
+#end
+    /**
+     * ${field.comment}
+     */
+#if(${field.keyFlag})
+## 主键
+#if(${field.keyIdentityFlag})
+    @TableId(value = "${field.name}", type = IdType.AUTO)
+#elseif(!$null.isNull(${idType}) && "$!idType" != "")
+    @TableId(value = "${field.name}", type = IdType.${idType})
+#else
+    @TableId("${field.name}")
+#end
+## 普通字段
+#else
+    @TableField("${field.name}")
+#end
+    private ${field.propertyType} ${field.propertyName};
+#end
+## ----------  END 字段循环遍历  ----------
+
+}
