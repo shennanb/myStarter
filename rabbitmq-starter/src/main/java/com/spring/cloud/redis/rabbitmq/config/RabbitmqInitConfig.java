@@ -1,4 +1,4 @@
-package config;
+package com.spring.cloud.redis.rabbitmq.config;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package config;
+package com.spring.cloud.redis.rabbitmq.config;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
@@ -6,7 +6,6 @@ import com.rabbitmq.client.Channel;
 import core.exception.BaseException;
 import core.exception.SystemErrorType;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.validator.internal.util.StringHelper;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;

@@ -1,4 +1,4 @@
-package com.mybatis.util;
+package com.spring.cloud.mybatis.util;
 
 
 import core.page.Page;

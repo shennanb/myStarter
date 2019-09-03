@@ -1,4 +1,4 @@
-package com.mybatis.util;
+package com.spring.cloud.mybatis.util;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -11,21 +11,21 @@ public class MybatisPlusGenerator {
     /*** 表前缀去除*/
    // private static String[] tablePrefix = new String[]{"hari_"};
     /*** 表名*/
-    private static String[] table = new String[]{"gateway_routes"};
+    public static String[] table = new String[]{"gateway_routes"};
     /*** 模块名*/
-    private static String modelName = "gateway";
+    public static String modelName = "gateway";
     //作者
-    private static String author = "shennanb";
-    private static String sqlUrl = "jdbc:mysql://118.25.213.82:3306/my_dataBase";
-    private static String sqlUserName = "root";
-    private static String sqlPassword = "123456";
+    public static String author = "shennanb";
+    public static String sqlUrl = "jdbc:mysql://118.25.213.82:3306/my_dataBase";
+    public static String sqlUserName = "root";
+    public static String sqlPassword = "123456";
 
     public static void main(String[] args) {
         execute( true);
         execute( false);
     }
 
-    private static void execute(boolean api) {
+    public static void execute(boolean api) {
         AutoGenerator mpg = new AutoGenerator();
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();

@@ -1,4 +1,4 @@
-package Util;
+package com.spring.cloud.redis.util;
 
 
 import cn.hutool.json.JSONUtil;

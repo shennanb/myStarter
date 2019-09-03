@@ -1,7 +1,7 @@
-package service;
+package com.spring.cloud.redis.rabbitmq.service;
 
 import cn.hutool.core.lang.UUID;
-import code.RabbitMqQueue;
+import com.spring.cloud.redis.rabbitmq.code.RabbitMqQueue;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageDeliveryMode;

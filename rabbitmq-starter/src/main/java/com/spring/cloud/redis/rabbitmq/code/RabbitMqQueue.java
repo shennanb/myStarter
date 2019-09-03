@@ -1,4 +1,4 @@
-package code;
+package com.spring.cloud.redis.rabbitmq.code;
 
 import lombok.Data;
 
